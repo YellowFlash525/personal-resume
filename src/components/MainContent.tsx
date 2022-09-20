@@ -134,9 +134,6 @@ const MainContent = () => (
                 </StyledBlockListingItem>
             </StyledBlockListing>
         </StyledBlockListingContainer>
-        <StyledBlockListingContainer>
-            <StyledBlockListingTitle>Skills</StyledBlockListingTitle>
-        </StyledBlockListingContainer>
     </StyledMainContent>
 );
 
