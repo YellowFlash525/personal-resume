@@ -1,5 +1,22 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Container } from "./General";
+
+interface StyledBlockListingItemInterface {
+  isOdd?: boolean;
+}
+
+export const StyledBlockElement = css`
+  &:before {
+    background: #ffd42d;
+    content: "";
+    height: 8px;
+    left: 50%;
+    position: absolute;
+    top: -20px;
+    width: 20px;
+    transform: translate3d(-50%, 0, 0);
+  }
+`;
 
 export const StyledMainContent = styled.div`
   font-family: "Roboto Slab", "Helvetica", "Arial", sans-serif;
@@ -60,22 +77,13 @@ export const StyledBlockListingContainer = styled.div`
 `;
 
 export const StyledBlockListingTitle = styled.h2`
+  ${StyledBlockElement}
+
   font-size: 15px;
   font-weight: 700;
   display: inline-block;
   position: relative;
   text-transform: uppercase;
-
-  &:before {
-    background: #ffd42d;
-    content: "";
-    height: 8px;
-    left: 50%;
-    position: absolute;
-    top: -20px;
-    width: 20px;
-    transform: translate3d(-50%, 0, 0);
-  }
 `;
 
 export const StyledBlockListing = styled.div`
@@ -101,7 +109,7 @@ export const StyledBlockListingItem = styled.div`
   z-index: 2;
 `;
 
-export const StyledBlockListingItemName = styled.div`
+export const StyledBlockListingItemName = styled.div<StyledBlockListingItemInterface>`
   font-size: 18px;
   position: relative;
   text-align: right;
@@ -109,7 +117,7 @@ export const StyledBlockListingItemName = styled.div`
   margin-right: 59px;
 
   &:before {
-    background: #ffd42d;
+    background: ${({ isOdd }) => (isOdd ? "#2a2a2a" : "#ffd42d")};
     border: 4px solid #fff;
     content: " ";
     height: 10px;
@@ -118,14 +126,6 @@ export const StyledBlockListingItemName = styled.div`
     top: 1px;
     width: 10px;
     border-radius: 50%;
-  }
-
-  &:nth-child(1)::before {
-    background: #2a2a2a;
-  }
-
-  &:nth-child(3)::before {
-    background: #2a2a2a;
   }
 
   h3,
@@ -147,6 +147,32 @@ export const StyledBlockListingItemName = styled.div`
   span {
     color: #999999;
     font-size: 13.5px;
+
+    em {
+      background: #ffd42d;
+      border-radius: 3px;
+      color: #2a2a2a;
+      font-size: 12.5px;
+      font-weight: 400;
+      margin-left: 10px;
+      padding: 2px 7px;
+      position: relative;
+      top: -1px;
+      position: relative;
+
+      &:before {
+        border-color: transparent #ffd42d;
+        border-style: solid;
+        border-width: 6px 5px 6px 0;
+        content: "";
+        display: block;
+        left: -4px;
+        position: absolute;
+        top: 4px;
+        width: 0;
+        z-index: 0;
+      }
+    }
   }
 `;
 

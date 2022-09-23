@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyledMainContent, StyledBlockListing, StyledBlockListingItem, StyledBlockListingContainer, StyledMainInfo, StyledBlockListingTitle, StyledBlockListingItemName, StyledBlockListingItemDetail } from '../styles/MainContent';
 
-const MainContent = () => (
+const MainContent: React.FC = () => (
     <StyledMainContent>
         <StyledMainInfo>
             <h1>Kamil Wójcik</h1>
@@ -15,11 +15,16 @@ const MainContent = () => (
             <StyledBlockListingTitle>Work Experience</StyledBlockListingTitle>
             <StyledBlockListing>
                 <StyledBlockListingItem>
-                    <StyledBlockListingItemName>
+                    <StyledBlockListingItemName isOdd>
                         <span>
-                            May 2021 - current
+                            May 2021
+                            <em>
+                                Current
+                            </em>
                         </span>
-                        <h3>Wunderman Thompson Technology (formerly Cognifide Polska)</h3>
+                        <h3>Wunderman Thompson Technology
+                            (formerly Cognifide Polska)
+                        </h3>
                         <h4>
                             Senior Frontend Developer
                         </h4>
@@ -36,7 +41,9 @@ const MainContent = () => (
                         <span>
                             December 2020 - April 2021
                         </span>
-                        <h3>Wunderman Thompson Technology (formerly Cognifide Polska)</h3>
+                        <h3>Wunderman Thompson Technology
+                            (formerly Cognifide Polska)
+                        </h3>
                         <h4>
                             Independent Frontend Developer
                         </h4>
@@ -49,7 +56,7 @@ const MainContent = () => (
                     </StyledBlockListingItemDetail>
                 </StyledBlockListingItem>
                 <StyledBlockListingItem>
-                    <StyledBlockListingItemName>
+                    <StyledBlockListingItemName isOdd>
                         <span>
                             November 2019 - December 2020
                         </span>
@@ -83,7 +90,7 @@ const MainContent = () => (
                     </StyledBlockListingItemDetail>
                 </StyledBlockListingItem>
                 <StyledBlockListingItem>
-                    <StyledBlockListingItemName>
+                    <StyledBlockListingItemName isOdd>
                         <span>
                             July 2017 - July 2018
                         </span>
@@ -105,7 +112,7 @@ const MainContent = () => (
             <StyledBlockListingTitle>Education</StyledBlockListingTitle>
              <StyledBlockListing>
                 <StyledBlockListingItem>
-                    <StyledBlockListingItemName>
+                    <StyledBlockListingItemName isOdd>
                         <span>
                             2018 - 2019
                         </span>
