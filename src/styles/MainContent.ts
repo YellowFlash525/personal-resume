@@ -21,7 +21,6 @@ export const StyledBlockElement = css`
 export const StyledMainContent = styled.div`
   font-family: "Roboto Slab", "Helvetica", "Arial", sans-serif;
   background-color: white;
-  padding: 80px;
   position: relative;
 
   h1 {
@@ -60,12 +59,20 @@ export const StyledMainContent = styled.div`
   }
 `;
 
+export const StyledMainContentWrapper = styled.div`
+  padding: 80px 40px;
+
+  @media only screen and (min-width: 992px) {
+    padding: 80px;
+  }
+`;
+
 export const StyledMainInfo = styled.div`
   ${Container}
 `;
 
 export const StyledBlockListingContainer = styled.div`
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 
   h2 {
     font-size: 15px;
