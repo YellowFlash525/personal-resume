@@ -100,7 +100,7 @@ const MainContent: React.FC = () => (
                         </StyledBlockListingItemName>
                         <StyledBlockListingItemDetail>
                             <StyledTitle>
-                                Project for Ford Motor Company as UI lead for E-commerce application with dashboard view for Ford clients, which contain information about bought car, allow to buy subscribtions, renew the car warranties and buy additional extras.
+                                Project for Ford Motor Company as UI lead for E-commerce application with dashboard view for Ford clients, which contain information about purchased car, allow to buy subscribtions, renew the car warranties and buy additional extras.
                             </StyledTitle>
                             <StyledDescription>Stack involves AEM 6.4 (Classic UI), React, Redux, Redux-Thunk, SCSS, Jest</StyledDescription>
                         </StyledBlockListingItemDetail>
