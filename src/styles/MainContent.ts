@@ -135,6 +135,10 @@ export const StyledBlockListingItemName = styled.div<StyledBlockListingItemInter
     border-radius: 50%;
   }
 
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
   h3,
   h4,
   span {
@@ -187,8 +191,12 @@ export const StyledBlockListingItemDetail = styled.div`
   position: relative;
   text-align: left;
   width: 50%;
+`;
 
-  p {
-    margin: 0;
-  }
+export const StyledResumeClosure = styled.p`
+  text-align: left;
+  margin-bottom: 40px;
+  padding: 15px 15px 0;
+  font-size: 13px;
+  color: #999999;
 `;

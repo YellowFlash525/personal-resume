@@ -13,7 +13,6 @@ const Sidebar: React.FC = () => (
         <StyledSidebarPhoto>
             <img src="./images/avatar.jpg" alt="Avatar" />
         </StyledSidebarPhoto>
-        {/* lista z ikonakimi i linkami */}
         <StyledSidebarIconList>
             <li>
                 <a href="https://www.facebook.com/kamil.wojcik.90/" target="_blank" rel="noopener noreferrer">
@@ -82,7 +81,7 @@ const Sidebar: React.FC = () => (
                 <StyledSidebarListTitle>Language</StyledSidebarListTitle>
                 <StyledSidebarList>
                     <li><span>English</span> (Fluent and communicative)</li>
-                    <li><span>Polish</span> (Advanced)</li>
+                    <li><span>Polish</span> (Native)</li>
                 </StyledSidebarList>
             </StyledSidebarListContainer>
             <StyledSidebarListContainer>
